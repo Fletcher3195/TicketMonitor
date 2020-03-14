@@ -12,11 +12,22 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 
+// Images
+import logo from './resources/svg/logo.svg';
+
 function App() {
   return (
     <Container fluid>
       <Navbar bg="dark" variant="dark" expand="lg">
-        <Navbar.Brand href="#home"><i id="logo">ticketmonitor</i></Navbar.Brand>
+        <Navbar.Brand href="#home">
+        <img
+        src={logo}
+        width="200"
+        // height="30"
+        className="d-inline-block align-top"
+        alt="ticketmonitor"
+      />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -40,7 +51,7 @@ function App() {
               aria-describedby="location"
             />
             <InputGroup.Append>
-              <InputGroup.Text id="location"><svg aria-hidden="true" class="bnr9k-2 hDVGXP location-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path fill="currentColor" fill-rule="nonzero" d="M12.373 23.833a.5.5 0 0 1-.746 0C5.883 17.413 3 12.495 3 9c0-5.276 3.724-9 9-9s9 3.724 9 9c0 3.495-2.883 8.414-8.627 14.833zM20 9c0-4.724-3.276-8-8-8S4 4.276 4 9c0 3.1 2.66 7.707 8 13.748C17.34 16.708 20 12.1 20 9zm-8 4a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path></g></svg></InputGroup.Text>
+              <InputGroup.Text id="location"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path fill="currentColor" fill-rule="nonzero" d="M12.373 23.833a.5.5 0 0 1-.746 0C5.883 17.413 3 12.495 3 9c0-5.276 3.724-9 9-9s9 3.724 9 9c0 3.495-2.883 8.414-8.627 14.833zM20 9c0-4.724-3.276-8-8-8S4 4.276 4 9c0 3.1 2.66 7.707 8 13.748C17.34 16.708 20 12.1 20 9zm-8 4a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path></g></svg></InputGroup.Text>
             </InputGroup.Append>
           </InputGroup>
         </Col>
